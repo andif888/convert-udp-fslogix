@@ -8,7 +8,7 @@ AD Powershell Modules
 Install-WindowsFeature RSAT-AD-PowerShell
 ```
 
-## Migrate UDP VHDs to FSLogix VHDs
+## Migrate UPD VHDs to FSLogix VHDs
 
 1. Copy UVHDs to new folder and share folder e.g to `\\fileserver01\uvhd_profiles`
 2. Create new folder and share folder e.g. at `\\fileserver01\fslogix_profiles` 
@@ -42,7 +42,7 @@ Download and install FSLogix
 Example: 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\FSLogix\Profiles]
-"Enabled"=dword:00000000
+"Enabled"=dword:00000001
 "VHDLocations"="\\fileserver01\fslogix_profiles"
 "VolumeType"="VHDX"
 "SizeInMBs"=dword:00000c00
