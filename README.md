@@ -74,3 +74,7 @@ Convert VHD to VHDX
 ```powershell
 Convert-VHD TestVHD.vhd -VHDFormat VHDX -DestinationPath C:\temp\VHDs\TestVHDX.vhdx -DeleteSource 
 ```
+
+## Reference
+
+The script is a modified version from Roger Critz from the [Microsoft Tech Community Post](https://techcommunity.microsoft.com/t5/windows-virtual-desktop/convert-upd-to-fslogix-container/m-p/927214)
