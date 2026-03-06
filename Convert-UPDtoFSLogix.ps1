@@ -69,8 +69,8 @@ Function MountError ($ErrorRecord=$Error[0])
 # Create folder if missing
 If(!(Test-Path $errorlogfolder))
     {
-    New-Item -ItemType Directory -Force -Path $fslogixroot
-    Write-Host (ThisHHmmss) "Created $fslogixroot" -ForegroundColor Yellow
+    New-Item -ItemType Directory -Force -Path $errorlogfolder
+    Write-Host (ThisHHmmss) "Created $errorlogfolder" -ForegroundColor Yellow
 }
 # Create file if missing
 If(!(Test-Path $errorlogresults))
@@ -86,6 +86,7 @@ If(!(Test-Path $errorlogresults))
 If(!(Test-Path $fslogixroot))
     {
     New-Item -ItemType Directory -Force -Path $fslogixroot
+    Write-Host (ThisHHmmss) "Created $fslogixroot" -ForegroundColor Yellow
 }
 
 
